@@ -1,0 +1,125 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  background-color: slategray;
+  background-image: url('../img/colorfull.jpg');
+  background-size: 10%;
+}
+.hidden{
+  display: none !important;
+}
+
+h1{
+  text-align: center;
+  margin: 40px;
+  font-size: 5rem;
+}
+h2{
+  font-size: 3rem;
+}
+h4{
+  font-size: 2rem;
+  
+}
+h3{
+  font-size: 2.5rem;
+  
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  border-radius: 10% 10% 0 0 ;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px
+}
+li{
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+li h4{
+  margin: 0;
+  height: 70px;
+  border-radius: 0 0 50px 50px;
+  background-color: thistle;
+  padding-top: 20px;
+}
+
+
+.details{
+  display: flex;
+}
+
+.details .detailsImage{
+  width: 50%;
+  padding: 5%;
+  align-self: center;
+}
+.detailsImage img{
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 0 0;
+}
+.details .detailsOthers{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 5%;
+  background-color: antiquewhite;
+}
+
+.detailsOthers span{
+  font-size: 2rem;
+}
+
+button{
+  background-color: yellowgreen;
+  font-size: 2rem;
+  margin: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 650px){
+  .details {
+    flex-direction: column;
+
+  }
+  .details .detailsImage {
+    width: 100%;
+    padding: 5%;
+  }
+  
+  
+  .details .detailsOthers {
+    width: 100%;
+    padding: 5%;
+  }
+}
